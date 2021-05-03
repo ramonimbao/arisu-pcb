@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:arisu-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U2
+L arisu-rescue:ATmega32U4-AU-MCU_Microchip_ATmega U2
 U 1 1 5C4B1F82
 P 4500 4250
 F 0 "U2" H 4900 2400 50  0000 C CNN
@@ -25,7 +26,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J1
+L arisu-rescue:USB_B_Micro-Connector J1
 U 1 1 5C4B21E5
 P 1000 4800
 F 0 "J1" H 1055 5267 50  0000 C CNN
@@ -36,7 +37,7 @@ F 3 "~" H 1150 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power_Protection:USBLC6-2SC6 U1
+L arisu-rescue:USBLC6-2SC6-Power_Protection U1
 U 1 1 5C4B2347
 P 1900 5650
 F 0 "U1" H 1900 6328 50  0000 C CNN
@@ -586,37 +587,37 @@ row3
 Text Label 6450 4450 0    50   ~ 0
 row4
 Text Label 6450 5150 0    50   ~ 0
-col0
-Text Label 6450 5250 0    50   ~ 0
 col1
-Text Label 6450 4950 0    50   ~ 0
+Text Label 6450 5250 0    50   ~ 0
 col2
-Text Label 6450 3750 0    50   ~ 0
+Text Label 6450 4950 0    50   ~ 0
 col3
-Text Label 6450 3650 0    50   ~ 0
+Text Label 6450 3750 0    50   ~ 0
 col4
-Text Label 6450 3350 0    50   ~ 0
+Text Label 6450 3650 0    50   ~ 0
 col5
-Text Label 6450 4350 0    50   ~ 0
+Text Label 6450 3350 0    50   ~ 0
 col6
-Text Label 6450 2850 0    50   ~ 0
+Text Label 6450 4350 0    50   ~ 0
 col7
-Text Label 6450 2750 0    50   ~ 0
+Text Label 6450 2850 0    50   ~ 0
 col8
-Text Label 6450 3450 0    50   ~ 0
+Text Label 6450 2750 0    50   ~ 0
 col9
-Text Label 6400 3250 0    50   ~ 0
+Text Label 6450 3450 0    50   ~ 0
 col10
-Text Label 6400 3150 0    50   ~ 0
+Text Label 6400 3250 0    50   ~ 0
 col11
-Text Label 6400 4650 0    50   ~ 0
+Text Label 6400 3150 0    50   ~ 0
 col12
-Text Label 6400 4550 0    50   ~ 0
+Text Label 6400 4650 0    50   ~ 0
 col13
-Text Label 6400 3050 0    50   ~ 0
+Text Label 6400 4550 0    50   ~ 0
 col14
+Text Label 6400 3050 0    50   ~ 0
+col15
 Entry Wire Line
-	5400 5350 5500 5450
+	6650 5350 6750 5450
 Entry Wire Line
 	5400 5450 5500 5550
 Entry Wire Line
@@ -624,15 +625,13 @@ Entry Wire Line
 Entry Wire Line
 	5400 5650 5500 5750
 Wire Wire Line
-	5100 5350 5400 5350
-Wire Wire Line
 	5100 5450 5400 5450
 Wire Wire Line
 	5100 5550 5400 5550
 Wire Wire Line
 	5100 5650 5400 5650
-Text Label 5250 5350 0    50   ~ 0
-PF4
+Text Label 6450 5350 0    50   ~ 0
+col0
 Text Label 5250 5450 0    50   ~ 0
 PF5
 Text Label 5250 5550 0    50   ~ 0
@@ -677,21 +676,22 @@ F3 "row1" T L 7500 2900 50
 F4 "row2" T L 7500 3000 50 
 F5 "row3" T L 7500 3100 50 
 F6 "row4" T L 7500 3200 50 
-F7 "col0" T L 7500 3400 50 
-F8 "col1" T L 7500 3500 50 
-F9 "col2" T L 7500 3600 50 
-F10 "col3" T L 7500 3700 50 
-F11 "col4" T L 7500 3800 50 
-F12 "col5" T L 7500 3900 50 
-F13 "col6" T L 7500 4000 50 
-F14 "col7" T L 7500 4100 50 
-F15 "col8" T L 7500 4200 50 
-F16 "col9" T L 7500 4300 50 
-F17 "col10" T L 7500 4400 50 
-F18 "col11" T L 7500 4500 50 
-F19 "col12" T L 7500 4600 50 
-F20 "col13" T L 7500 4700 50 
-F21 "col14" T L 7500 4800 50 
+F7 "col0" T L 7500 3300 50 
+F8 "col1" T L 7500 3400 50 
+F9 "col2" T L 7500 3500 50 
+F10 "col3" T L 7500 3600 50 
+F11 "col4" T L 7500 3700 50 
+F12 "col5" T L 7500 3800 50 
+F13 "col6" T L 7500 3900 50 
+F14 "col7" T L 7500 4000 50 
+F15 "col8" T L 7500 4100 50 
+F16 "col9" T L 7500 4200 50 
+F17 "col10" T L 7500 4300 50 
+F18 "col11" T L 7500 4400 50 
+F19 "col12" T L 7500 4500 50 
+F20 "col13" T L 7500 4600 50 
+F21 "col14" T L 7500 4700 50 
+F22 "col15" T L 7500 4800 50 
 $EndSheet
 Wire Wire Line
 	7500 2800 7150 2800
@@ -774,17 +774,6 @@ Wire Wire Line
 Wire Wire Line
 	7150 3400 7500 3400
 $Comp
-L Connector_Generic:Conn_01x01 J8
-U 1 1 5C895E5D
-P 6100 6600
-F 0 "J8" H 6179 6642 50  0000 L CNN
-F 1 "PF4" H 6179 6551 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 6100 6600 50  0001 C CNN
-F 3 "~" H 6100 6600 50  0001 C CNN
-	1    6100 6600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J9
 U 1 1 5C895ED7
 P 6100 6800
@@ -823,8 +812,6 @@ Entry Wire Line
 	5500 7100 5600 7000
 Entry Wire Line
 	5500 6900 5600 6800
-Entry Wire Line
-	5500 6700 5600 6600
 Wire Bus Line
 	5750 2700 6100 2700
 Wire Bus Line
@@ -993,15 +980,11 @@ Wire Wire Line
 Wire Wire Line
 	3700 1900 3700 1950
 Wire Wire Line
-	5600 6600 5900 6600
-Wire Wire Line
 	5600 6800 5900 6800
 Wire Wire Line
 	5600 7000 5900 7000
 Wire Wire Line
 	5600 7200 5900 7200
-Text Label 5650 6600 0    50   ~ 0
-PF4
 Text Label 5650 6800 0    50   ~ 0
 PF5
 Text Label 5650 7000 0    50   ~ 0
@@ -1032,35 +1015,35 @@ Wire Wire Line
 Wire Wire Line
 	5100 5250 6650 5250
 Text Label 7200 3400 0    50   ~ 0
-col0
-Text Label 7200 3500 0    50   ~ 0
 col1
-Text Label 7200 4800 0    50   ~ 0
-col14
-Text Label 7200 4700 0    50   ~ 0
-col13
-Text Label 7200 4600 0    50   ~ 0
-col12
-Text Label 7200 4400 0    50   ~ 0
-col10
-Text Label 7200 4500 0    50   ~ 0
-col11
-Text Label 7200 4200 0    50   ~ 0
-col8
-Text Label 7200 4100 0    50   ~ 0
-col7
-Text Label 7200 4300 0    50   ~ 0
-col9
-Text Label 7200 4000 0    50   ~ 0
-col6
-Text Label 7200 3600 0    50   ~ 0
+Text Label 7200 3500 0    50   ~ 0
 col2
-Text Label 7200 3700 0    50   ~ 0
+Text Label 7200 4800 0    50   ~ 0
+col15
+Text Label 7200 4700 0    50   ~ 0
+col14
+Text Label 7200 4600 0    50   ~ 0
+col13
+Text Label 7200 4400 0    50   ~ 0
+col11
+Text Label 7200 4500 0    50   ~ 0
+col12
+Text Label 7200 4200 0    50   ~ 0
+col9
+Text Label 7200 4100 0    50   ~ 0
+col8
+Text Label 7200 4300 0    50   ~ 0
+col10
+Text Label 7200 4000 0    50   ~ 0
+col7
+Text Label 7200 3600 0    50   ~ 0
 col3
-Text Label 7200 3800 0    50   ~ 0
+Text Label 7200 3700 0    50   ~ 0
 col4
-Text Label 7200 3900 0    50   ~ 0
+Text Label 7200 3800 0    50   ~ 0
 col5
+Text Label 7200 3900 0    50   ~ 0
+col6
 Wire Wire Line
 	5100 3150 5350 3150
 Text Label 7200 3200 0    50   ~ 0
@@ -1257,6 +1240,14 @@ Wire Wire Line
 Connection ~ 1900 4600
 Wire Wire Line
 	1900 4600 2750 4600
+Wire Wire Line
+	5100 5350 6650 5350
+Text Label 7200 3300 0    50   ~ 0
+col0
+Entry Wire Line
+	7050 3400 7150 3300
+Wire Wire Line
+	7150 3300 7500 3300
 Wire Bus Line
 	5750 2700 5750 3150
 Wire Bus Line

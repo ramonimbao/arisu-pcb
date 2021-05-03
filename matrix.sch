@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:arisu-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,9 +16,9 @@ Comment4 ""
 $EndDescr
 Text HLabel 950  1950 0    50   3State ~ 0
 row0
-Text HLabel 1850 750  1    50   3State ~ 0
+Text HLabel 1200 750  1    50   3State ~ 0
 col1
-Text HLabel 2500 750  1    50   3State ~ 0
+Text HLabel 1850 750  1    50   3State ~ 0
 col2
 Text HLabel 950  2950 0    50   3State ~ 0
 row1
@@ -38,31 +39,31 @@ F 3 "" H 1400 1800 50  0001 C CNN
 	1    1400 1600
 	1    0    0    -1  
 $EndComp
-Text HLabel 1200 750  1    50   3State ~ 0
+Text HLabel 600  750  1    50   3State ~ 0
 col0
-Text HLabel 3150 750  1    50   3State ~ 0
+Text HLabel 2500 750  1    50   3State ~ 0
 col3
-Text HLabel 3800 750  1    50   3State ~ 0
+Text HLabel 3150 750  1    50   3State ~ 0
 col4
-Text HLabel 4450 750  1    50   3State ~ 0
+Text HLabel 3800 750  1    50   3State ~ 0
 col5
-Text HLabel 5100 750  1    50   3State ~ 0
+Text HLabel 4450 750  1    50   3State ~ 0
 col6
-Text HLabel 5750 750  1    50   3State ~ 0
+Text HLabel 5100 750  1    50   3State ~ 0
 col7
-Text HLabel 6400 750  1    50   3State ~ 0
+Text HLabel 5750 750  1    50   3State ~ 0
 col8
-Text HLabel 7050 750  1    50   3State ~ 0
+Text HLabel 6400 750  1    50   3State ~ 0
 col9
-Text HLabel 7700 750  1    50   3State ~ 0
+Text HLabel 7050 750  1    50   3State ~ 0
 col10
-Text HLabel 8350 750  1    50   3State ~ 0
+Text HLabel 7700 750  1    50   3State ~ 0
 col11
-Text HLabel 9000 750  1    50   3State ~ 0
+Text HLabel 8350 750  1    50   3State ~ 0
 col12
-Text HLabel 9650 750  1    50   3State ~ 0
+Text HLabel 9000 750  1    50   3State ~ 0
 col13
-Text HLabel 10300 750  1    50   3State ~ 0
+Text HLabel 9650 750  1    50   3State ~ 0
 col14
 $Comp
 L Device:D D1
@@ -87,9 +88,9 @@ F 3 "" H 2050 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  1950 1600 1950
+	950  1950 1000 1950
 Wire Wire Line
-	950  2950 1600 2950
+	950  2950 1000 2950
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5C520197
@@ -174,7 +175,7 @@ F 3 "~" H 1600 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	950  3950 1600 3950
+	950  3950 1000 3950
 Wire Wire Line
 	950  4950 1600 4950
 Wire Wire Line
@@ -2177,4 +2178,103 @@ Wire Wire Line
 	2900 5950 4200 5950
 Wire Wire Line
 	1600 5950 2900 5950
+$Comp
+L Switch:SW_Push SW68
+U 1 1 60923016
+P 800 1600
+F 0 "SW68" H 800 1885 50  0000 C CNN
+F 1 "SW_Push" H 800 1794 50  0000 C CNN
+F 2 "MX_Switch:SW_Cherry_MX_1.00u_PCB" H 800 1800 50  0001 C CNN
+F 3 "" H 800 1800 50  0001 C CNN
+	1    800  1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D68
+U 1 1 6092301C
+P 1000 1750
+F 0 "D68" V 1050 1950 50  0000 R CNN
+F 1 "D" V 950 1900 50  0000 R CNN
+F 2 "Diodes_SMD:D_SOD-123" H 1000 1750 50  0001 C CNN
+F 3 "~" H 1000 1750 50  0001 C CNN
+	1    1000 1750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 600  1600
+Wire Wire Line
+	600  750  600  1600
+Wire Wire Line
+	600  1600 600  2600
+Text Notes 750  1200 0    100  ~ 0
+LM1
+$Comp
+L Switch:SW_Push SW69
+U 1 1 6092D432
+P 800 2600
+F 0 "SW69" H 800 2885 50  0000 C CNN
+F 1 "SW_Push" H 800 2794 50  0000 C CNN
+F 2 "MX_Switch:SW_Cherry_MX_1.00u_PCB" H 800 2800 50  0001 C CNN
+F 3 "" H 800 2800 50  0001 C CNN
+	1    800  2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D69
+U 1 1 6092D438
+P 1000 2750
+F 0 "D69" V 1050 2950 50  0000 R CNN
+F 1 "D" V 950 2900 50  0000 R CNN
+F 2 "Diodes_SMD:D_SOD-123" H 1000 2750 50  0001 C CNN
+F 3 "~" H 1000 2750 50  0001 C CNN
+	1    1000 2750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 600  2600
+Wire Wire Line
+	600  1750 600  2600
+Text Notes 750  2200 0    100  ~ 0
+LM2
+$Comp
+L Switch:SW_Push SW70
+U 1 1 609384E4
+P 800 3600
+F 0 "SW70" H 800 3885 50  0000 C CNN
+F 1 "SW_Push" H 800 3794 50  0000 C CNN
+F 2 "MX_Switch:SW_Cherry_MX_1.00u_PCB" H 800 3800 50  0001 C CNN
+F 3 "" H 800 3800 50  0001 C CNN
+	1    800  3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D70
+U 1 1 609384EA
+P 1000 3750
+F 0 "D70" V 1050 3950 50  0000 R CNN
+F 1 "D" V 950 3900 50  0000 R CNN
+F 2 "Diodes_SMD:D_SOD-123" H 1000 3750 50  0001 C CNN
+F 3 "~" H 1000 3750 50  0001 C CNN
+	1    1000 3750
+	0    -1   -1   0   
+$EndComp
+Text Notes 750  3200 0    100  ~ 0
+LM3
+Text HLabel 10300 750  1    50   3State ~ 0
+col15
+Wire Wire Line
+	1000 1900 1000 1950
+Connection ~ 1000 1950
+Wire Wire Line
+	1000 1950 1600 1950
+Wire Wire Line
+	1000 2900 1000 2950
+Connection ~ 1000 2950
+Wire Wire Line
+	1000 2950 1600 2950
+Wire Wire Line
+	1000 3900 1000 3950
+Connection ~ 1000 3950
+Wire Wire Line
+	1000 3950 1600 3950
+Wire Wire Line
+	600  2600 600  3600
 $EndSCHEMATC
